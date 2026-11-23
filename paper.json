@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24409057",
     "current_version": 2,
-    "doi": null,
+    "doi": "10.5281/zenodo.24409058",
     "lean_source": {
       "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
       "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
