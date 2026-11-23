@@ -1,0 +1,550 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:kagey343881-powerproducts:2:s1",
+      "kind": "paper",
+      "label": "Proposition",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+      },
+      "lineage": "collected:kagey343881-powerproducts:s1",
+      "macros": {
+        "\\rad": "\\operatorname{rad}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kagey343881-powerproducts",
+      "scope": "in_scope",
+      "statement": "For every $n\\ge2$, no integers in~\\eqref{eq:works} exist with\n$k=12$ and $m=72$. In particular, $T(p,12)\\ne72=12\\rad(12)$ for\nevery prime $p$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+      "toolchain": null,
+      "version": 2,
+      "work": "kagey343881-powerproducts"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s10",
+      "contributor": null,
+      "identity": "collected:kagey343881-powerproducts:2:s10",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+      },
+      "lineage": "collected:kagey343881-powerproducts:s10",
+      "macros": {
+        "\\rad": "\\operatorname{rad}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kagey343881-powerproducts",
+      "scope": "in_scope",
+      "statement": "Write $m=A B^2t^3$, where $A,B$ are coprime squarefree positive integers\nand $t\\ge1$. Then\n\\[\n m\\in\\operatorname{A299117}\n \\quad\\Longleftrightarrow\\quad t>1\\ \\hbox{or}\\ A<B.\n\\]\nIn particular the cube-row image contains every square and every cube\ngreater than $1$, contains no squarefree integer, and excludes $1$.\nFor every prime $q$,\n\\[\n T(3,q)=\\min\\{q^2,8q\\}.\n\\]",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+      "toolchain": null,
+      "version": 2,
+      "work": "kagey343881-powerproducts"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s11",
+      "contributor": null,
+      "identity": "collected:kagey343881-powerproducts:2:s11",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+      },
+      "lineage": "collected:kagey343881-powerproducts:s11",
+      "macros": {
+        "\\rad": "\\operatorname{rad}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kagey343881-powerproducts",
+      "scope": "in_scope",
+      "statement": "For $n\\ge2$ and $k\\ge1$, $S(n,k)\\le T(n,k)$.\nFor $n=2$ this inequality is strict for every $k\\ge1$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+      "toolchain": null,
+      "version": 2,
+      "work": "kagey343881-powerproducts"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s12",
+      "contributor": null,
+      "identity": "collected:kagey343881-powerproducts:2:s12",
+      "kind": "paper",
+      "label": "Proposition",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+      },
+      "lineage": "collected:kagey343881-powerproducts:s12",
+      "macros": {
+        "\\rad": "\\operatorname{rad}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kagey343881-powerproducts",
+      "scope": "in_scope",
+      "statement": "For every prime $p$, $k\\mapsto S(p,k)$ permutes the nonnegative\nnonprime integers as $k$ ranges over the nonnegative integers.\nAlso $R$ is a bijection from the positive integers to the positive nonprimes.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+      "toolchain": null,
+      "version": 2,
+      "work": "kagey343881-powerproducts"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s13",
+      "contributor": null,
+      "identity": "collected:kagey343881-powerproducts:2:s13",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+      },
+      "lineage": "collected:kagey343881-powerproducts:s13",
+      "macros": {
+        "\\rad": "\\operatorname{rad}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kagey343881-powerproducts",
+      "scope": "in_scope",
+      "statement": "Fix $k>1$, set $R=R(k)$, $d=\\pi(R)$, $B=\\lfloor\\log_2 R\\rfloor$,\nand $H=d!B^d$. Then $S(p,k)=R$ for every prime $p>H$.\nFor $k=1$, equality holds for every prime.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+      "toolchain": null,
+      "version": 2,
+      "work": "kagey343881-powerproducts"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s14",
+      "contributor": null,
+      "identity": "collected:kagey343881-powerproducts:2:s14",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+      },
+      "lineage": "collected:kagey343881-powerproducts:s14",
+      "macros": {
+        "\\rad": "\\operatorname{rad}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kagey343881-powerproducts",
+      "scope": "in_scope",
+      "statement": "For every prime $p$,\n\\[\n S(p,12)=\\begin{cases}20,&p=2,\\\\18,&p\\text{ odd}.\\end{cases}\n \\qquad R(12)=18.\n\\]\nIn particular $S(p,12)=T(p,12)$ exactly when $p=3$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+      "toolchain": null,
+      "version": 2,
+      "work": "kagey343881-powerproducts"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:kagey343881-powerproducts:2:s2",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+      },
+      "lineage": "collected:kagey343881-powerproducts:s2",
+      "macros": {
+        "\\rad": "\\operatorname{rad}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kagey343881-powerproducts",
+      "scope": "in_scope",
+      "statement": "For every prime $p>\\max\\{g+1,AL\\}$,\n\\[\n T(p,k)=M=k r.\n\\]\nConsequently, for fixed $k>1$, the conjectured eventual value $k\\rad(k)$\nis correct if and only if all the nonzero prime exponents of $k$ are equal.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+      "toolchain": null,
+      "version": 2,
+      "work": "kagey343881-powerproducts"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:kagey343881-powerproducts:2:s3",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+      },
+      "lineage": "collected:kagey343881-powerproducts:s3",
+      "macros": {
+        "\\rad": "\\operatorname{rad}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kagey343881-powerproducts",
+      "scope": "in_scope",
+      "statement": "For primes $p$,\n\\[\n T(p,12)=\n \\begin{cases}\n 27,&p=2,\\\\\n 18,&p=3,\\\\\n 54,&p=5,\\\\\n 144,&p\\ge7.\n \\end{cases}\n\\]",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+      "toolchain": null,
+      "version": 2,
+      "work": "kagey343881-powerproducts"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:kagey343881-powerproducts:2:s4",
+      "kind": "paper",
+      "label": "Proposition",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+      },
+      "lineage": "collected:kagey343881-powerproducts:s4",
+      "macros": {
+        "\\rad": "\\operatorname{rad}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kagey343881-powerproducts",
+      "scope": "in_scope",
+      "statement": "For each prime $p$, the map $k\\mapsto T(p,k)$ on positive integers\nis injective.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+      "toolchain": null,
+      "version": 2,
+      "work": "kagey343881-powerproducts"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:kagey343881-powerproducts:2:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+      },
+      "lineage": "collected:kagey343881-powerproducts:s5",
+      "macros": {
+        "\\rad": "\\operatorname{rad}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kagey343881-powerproducts",
+      "scope": "in_scope",
+      "statement": "For every prime $p$ and positive integer $k$,\n\\[\n T(p,k)=\\min_{1\\le a<p} C_a(k)\n \\left(\\left\\lfloor\\sqrt[p]{k/C_a(k)}\\right\\rfloor+1\\right)^p.\n\\]",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+      "toolchain": null,
+      "version": 2,
+      "work": "kagey343881-powerproducts"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:kagey343881-powerproducts:2:s6",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+      },
+      "lineage": "collected:kagey343881-powerproducts:s6",
+      "macros": {
+        "\\rad": "\\operatorname{rad}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kagey343881-powerproducts",
+      "scope": "in_scope",
+      "statement": "The map $k\\mapsto T(2,k)$ is a bijection from positive integers to\nthe integers that are not squarefree.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+      "toolchain": null,
+      "version": 2,
+      "work": "kagey343881-powerproducts"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s7",
+      "contributor": null,
+      "identity": "collected:kagey343881-powerproducts:2:s7",
+      "kind": "paper",
+      "label": "Proposition",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+      },
+      "lineage": "collected:kagey343881-powerproducts:s7",
+      "macros": {
+        "\\rad": "\\operatorname{rad}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kagey343881-powerproducts",
+      "scope": "in_scope",
+      "statement": "If $\\ell$ is the least prime divisor of $n\\ge2$, then $T(n,1)=2^\\ell$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+      "toolchain": null,
+      "version": 2,
+      "work": "kagey343881-powerproducts"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s8",
+      "contributor": null,
+      "identity": "collected:kagey343881-powerproducts:2:s8",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+      },
+      "lineage": "collected:kagey343881-powerproducts:s8",
+      "macros": {
+        "\\rad": "\\operatorname{rad}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kagey343881-powerproducts",
+      "scope": "in_scope",
+      "statement": "The row $k\\mapsto T(n,k)$ is injective if and only if $n$ is prime.\nFor composite $n$, if $\\ell$ is its least prime divisor, then\n\\[\n T(n,1)=T(n,2^{\\ell-1})=2^\\ell.\n\\]",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+      "toolchain": null,
+      "version": 2,
+      "work": "kagey343881-powerproducts"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s9",
+      "contributor": null,
+      "identity": "collected:kagey343881-powerproducts:2:s9",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+      },
+      "lineage": "collected:kagey343881-powerproducts:s9",
+      "macros": {
+        "\\rad": "\\operatorname{rad}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "kagey343881-powerproducts",
+      "scope": "in_scope",
+      "statement": "For a prime $p$, let $J_p(m)=\\min_{1\\le a<p}C_a(m)$, with $C_a$\nas in Corollary~\\ref{cor:primeformula}. Then\n\\[\n m\\in\\operatorname{image}(T(p,\\cdot))\\quad\\Longleftrightarrow\\quad\n m>J_p(m).\n\\]\nEvery member of this image is nonsquarefree.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+      "toolchain": null,
+      "version": 2,
+      "work": "kagey343881-powerproducts"
+    }
+  ]
+}

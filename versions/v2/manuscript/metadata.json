@@ -1,0 +1,15 @@
+{
+  "id": "kagey343881-powerproducts",
+  "revision": 2,
+  "problem_ids": ["kagey343881-powerproducts", "oeis-a343825-kagey-power-sequences"],
+  "topic": "The eventual-equality conjecture in comment 2 of OEIS A343881, revision 16",
+  "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "We correct the conjecture in comment 2 of Peter Kagey's OEIS A343881, revision 16 (June 14, 2021), and extend results of Kagey (2015) and Adenwalla (2025): the proposed value 72 at k=12 is inadmissible for every exponent n>=2. The exact prime-exponent minima are 27, 18, and 54 at p=2,3,5, respectively, and 144 at every prime p>=7. More generally, writing k=r^g with the prime-exponent vector of r having greatest common divisor 1, we prove that T(p,k)=r^(g+1) for all sufficiently large primes, with an explicit threshold. This gives the precise range in which the proposed formula k rad(k) is correct. We also prove the entry's distinct-prime-row assertion and first-column formula using the same valuation description. For the cross-referenced sequence minimum in A343825, we prove eventual equality with A071537 by an explicit determinant bound and reprove Adenwalla's k=12 prime column: 20 at p=2 and 18 at every odd prime. The valuation classes also answer the image questions in Kagey's Open problem collection, Problem 16: they characterize the cube-row image and show that the two-value rows are injective exactly at prime exponents.",
+  "summary": "For k=r^g with primitive valuation vector for r, the eventual two-value minimum is kr, agreeing with k rad(k) exactly when all positive prime exponents are equal. The arbitrary-sequence minimum instead eventually equals A071537(k). Both k=12 prime columns are determined. The two-value row is injective exactly when its exponent is prime. A299117 consists precisely of m=AB^2t^3 with A,B coprime squarefree, t>=1, and either t>1 or A<B. Exact residue formulas, row assertions, image criteria, and the first-column identity have complete written proofs, with earlier special cases and permutation proofs credited.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+}

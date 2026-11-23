@@ -1,0 +1,672 @@
+{
+  "composite_row_collisions": [
+    {
+      "common_minimum": 4,
+      "exponent": 4,
+      "start": 2
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 6,
+      "start": 2
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 8,
+      "start": 2
+    },
+    {
+      "common_minimum": 8,
+      "exponent": 9,
+      "start": 4
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 10,
+      "start": 2
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 12,
+      "start": 2
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 14,
+      "start": 2
+    },
+    {
+      "common_minimum": 8,
+      "exponent": 15,
+      "start": 4
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 16,
+      "start": 2
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 18,
+      "start": 2
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 20,
+      "start": 2
+    },
+    {
+      "common_minimum": 8,
+      "exponent": 21,
+      "start": 4
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 22,
+      "start": 2
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 24,
+      "start": 2
+    },
+    {
+      "common_minimum": 32,
+      "exponent": 25,
+      "start": 16
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 26,
+      "start": 2
+    },
+    {
+      "common_minimum": 8,
+      "exponent": 27,
+      "start": 4
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 28,
+      "start": 2
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 30,
+      "start": 2
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 32,
+      "start": 2
+    },
+    {
+      "common_minimum": 8,
+      "exponent": 33,
+      "start": 4
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 34,
+      "start": 2
+    },
+    {
+      "common_minimum": 32,
+      "exponent": 35,
+      "start": 16
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 36,
+      "start": 2
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 38,
+      "start": 2
+    },
+    {
+      "common_minimum": 8,
+      "exponent": 39,
+      "start": 4
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 40,
+      "start": 2
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 42,
+      "start": 2
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 44,
+      "start": 2
+    },
+    {
+      "common_minimum": 8,
+      "exponent": 45,
+      "start": 4
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 46,
+      "start": 2
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 48,
+      "start": 2
+    },
+    {
+      "common_minimum": 128,
+      "exponent": 49,
+      "start": 64
+    },
+    {
+      "common_minimum": 4,
+      "exponent": 50,
+      "start": 2
+    }
+  ],
+  "corrected_formula": {
+    "cases": 396,
+    "cases_above_sufficient_threshold": 377,
+    "different_from_k_radical": [
+      12,
+      18,
+      20,
+      24,
+      28,
+      40,
+      44,
+      45,
+      48,
+      50,
+      52,
+      54,
+      56,
+      60,
+      63,
+      68,
+      72,
+      75,
+      76,
+      80,
+      84,
+      88,
+      90,
+      92,
+      96,
+      98,
+      99
+    ],
+    "k_max": 100,
+    "k_min": 2,
+    "primes": [
+      31,
+      37,
+      41,
+      43
+    ]
+  },
+  "cube_image": {
+    "criterion_cases": 5184,
+    "last_source_value": 5184,
+    "prime_11_minimum": 88,
+    "source_terms_compared": 1000,
+    "source_url": "https://oeis.org/A299117/b299117.txt",
+    "square_and_cube_bases": [
+      2,
+      100
+    ],
+    "values_json_sha256": "88930276b20976452d0f052c73cfa4f6211855f71231b00bfd8726324f4a91c7"
+  },
+  "distinct_row_prefixes": {
+    "k_max": 100,
+    "k_min": 1,
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13
+    ]
+  },
+  "fixed_prime_formula": {
+    "cases": 600,
+    "k_max": 100,
+    "k_min": 1,
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13
+    ]
+  },
+  "integer_root_comparison": {
+    "cases": 792,
+    "k": 12,
+    "m_max": 144,
+    "m_min": 13,
+    "n_max": 7,
+    "n_min": 2
+  },
+  "k12_m72": {
+    "admissible_exponents": [],
+    "n_max": 60,
+    "n_min": 2
+  },
+  "k12_prime_column": [
+    {
+      "c": 18,
+      "minimum": 27,
+      "prime": 2,
+      "x": 1,
+      "y": 1
+    },
+    {
+      "c": 6,
+      "minimum": 18,
+      "prime": 3,
+      "x": 1,
+      "y": 1
+    },
+    {
+      "c": 18,
+      "minimum": 54,
+      "prime": 5,
+      "x": 1,
+      "y": 3
+    },
+    {
+      "c": 12,
+      "minimum": 144,
+      "prime": 7,
+      "x": 1,
+      "y": 3
+    },
+    {
+      "c": 12,
+      "minimum": 144,
+      "prime": 11,
+      "x": 1,
+      "y": 5
+    },
+    {
+      "c": 12,
+      "minimum": 144,
+      "prime": 13,
+      "x": 1,
+      "y": 6
+    },
+    {
+      "c": 12,
+      "minimum": 144,
+      "prime": 17,
+      "x": 1,
+      "y": 8
+    },
+    {
+      "c": 12,
+      "minimum": 144,
+      "prime": 19,
+      "x": 1,
+      "y": 9
+    },
+    {
+      "c": 12,
+      "minimum": 144,
+      "prime": 23,
+      "x": 1,
+      "y": 11
+    },
+    {
+      "c": 12,
+      "minimum": 144,
+      "prime": 29,
+      "x": 1,
+      "y": 14
+    },
+    {
+      "c": 12,
+      "minimum": 144,
+      "prime": 31,
+      "x": 1,
+      "y": 15
+    },
+    {
+      "c": 12,
+      "minimum": 144,
+      "prime": 37,
+      "x": 1,
+      "y": 18
+    },
+    {
+      "c": 12,
+      "minimum": 144,
+      "prime": 41,
+      "x": 1,
+      "y": 20
+    },
+    {
+      "c": 12,
+      "minimum": 144,
+      "prime": 43,
+      "x": 1,
+      "y": 21
+    },
+    {
+      "c": 12,
+      "minimum": 144,
+      "prime": 47,
+      "x": 1,
+      "y": 23
+    }
+  ],
+  "method": "exact integer factorization and valuation congruences; independent integer-root comparison",
+  "prime_image_criterion": {
+    "m_max": 500,
+    "m_min": 1,
+    "predecessor_comparisons": 2000,
+    "primes": [
+      2,
+      3,
+      5,
+      7
+    ]
+  },
+  "prime_signature_comparison": {
+    "cases": 3960,
+    "k_max": 20,
+    "k_min": 1,
+    "m_max": 60,
+    "primes": [
+      2,
+      3,
+      5,
+      7
+    ]
+  },
+  "rational_relation_minimum": {
+    "k_max": 100,
+    "k_min": 1,
+    "source_terms_compared": 81,
+    "values": [
+      1,
+      4,
+      6,
+      8,
+      10,
+      9,
+      14,
+      12,
+      15,
+      16,
+      22,
+      18,
+      26,
+      21,
+      20,
+      24,
+      34,
+      25,
+      38,
+      27,
+      28,
+      33,
+      46,
+      30,
+      32,
+      39,
+      35,
+      36,
+      58,
+      40,
+      62,
+      42,
+      44,
+      51,
+      45,
+      48,
+      74,
+      57,
+      52,
+      49,
+      82,
+      50,
+      86,
+      55,
+      54,
+      69,
+      94,
+      56,
+      60,
+      63,
+      68,
+      65,
+      106,
+      64,
+      66,
+      70,
+      76,
+      87,
+      118,
+      72,
+      122,
+      93,
+      75,
+      77,
+      78,
+      80,
+      134,
+      85,
+      92,
+      84,
+      142,
+      81,
+      146,
+      111,
+      88,
+      95,
+      90,
+      91,
+      158,
+      96,
+      98,
+      123,
+      166,
+      99,
+      102,
+      129,
+      116,
+      100,
+      178,
+      104,
+      105,
+      115,
+      124,
+      141,
+      114,
+      108,
+      194,
+      110,
+      112,
+      117
+    ]
+  },
+  "scope": "Finite checks corroborate the written proofs; the all-input statements are proved in note.tex.",
+  "sequence_bijection_prefix": {
+    "all_nonprime_images_through": 100,
+    "k_max": 100,
+    "k_min": 0,
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13
+    ]
+  },
+  "sequence_eventual_equality": {
+    "cases": 116,
+    "k_max": 30,
+    "k_min": 2,
+    "primes": [
+      101,
+      103,
+      107,
+      109
+    ]
+  },
+  "sequence_integer_root_comparison": {
+    "cases": 105,
+    "endpoint_offsets": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "k_max": 8,
+    "k_min": 2,
+    "primes": [
+      2,
+      3,
+      5
+    ]
+  },
+  "sequence_k12_prime_column": [
+    {
+      "minimum": 20,
+      "prime": 2
+    },
+    {
+      "minimum": 18,
+      "prime": 3
+    },
+    {
+      "minimum": 18,
+      "prime": 5
+    },
+    {
+      "minimum": 18,
+      "prime": 7
+    },
+    {
+      "minimum": 18,
+      "prime": 11
+    },
+    {
+      "minimum": 18,
+      "prime": 13
+    },
+    {
+      "minimum": 18,
+      "prime": 17
+    },
+    {
+      "minimum": 18,
+      "prime": 19
+    },
+    {
+      "minimum": 18,
+      "prime": 23
+    },
+    {
+      "minimum": 18,
+      "prime": 29
+    },
+    {
+      "minimum": 18,
+      "prime": 31
+    },
+    {
+      "minimum": 18,
+      "prime": 37
+    },
+    {
+      "minimum": 18,
+      "prime": 41
+    },
+    {
+      "minimum": 18,
+      "prime": 43
+    },
+    {
+      "minimum": 18,
+      "prime": 47
+    },
+    {
+      "minimum": 18,
+      "prime": 53
+    },
+    {
+      "minimum": 18,
+      "prime": 59
+    },
+    {
+      "minimum": 18,
+      "prime": 61
+    },
+    {
+      "minimum": 18,
+      "prime": 67
+    },
+    {
+      "minimum": 18,
+      "prime": 71
+    },
+    {
+      "minimum": 18,
+      "prime": 73
+    },
+    {
+      "minimum": 18,
+      "prime": 79
+    },
+    {
+      "minimum": 18,
+      "prime": 83
+    },
+    {
+      "minimum": 18,
+      "prime": 89
+    },
+    {
+      "minimum": 18,
+      "prime": 97
+    }
+  ],
+  "sequence_source_table": {
+    "entries": 44,
+    "k_max": 10,
+    "k_min": 0,
+    "primes": [
+      2,
+      3,
+      5,
+      7
+    ]
+  },
+  "status": "PASS",
+  "strict_square_comparison": {
+    "cases": 100,
+    "k_max": 100,
+    "k_min": 1
+  },
+  "table": {
+    "entries": 100,
+    "k_max": 10,
+    "k_min": 1,
+    "matched": true,
+    "n_max": 11,
+    "n_min": 2
+  }
+}

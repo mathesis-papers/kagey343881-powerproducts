@@ -1,0 +1,596 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,longtable}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\usepackage{xurl}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\DeclareMathOperator{\rad}{rad}
+\title{Correction of OEIS A343881, comment 2, revision 16:\\
+extensions of Kagey (2015) and Adenwalla (2025)}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{November 9, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We correct the conjecture in comment 2 of Peter Kagey's OEIS A343881,
+revision 16 (June 14, 2021), and extend results of Kagey (2015) and
+Adenwalla (2025): the proposed value $72$ at $k=12$ is inadmissible
+for every exponent $n\ge2$.
+The exact prime-exponent minima are $27$, $18$, and $54$ at $p=2,3,5$,
+respectively, and $144$ at every prime $p\ge7$.
+More generally, writing $k=r^g$ with the prime-exponent vector of $r$
+having greatest common divisor $1$, we prove that $T(p,k)=r^{g+1}$ for
+all sufficiently large primes, with an explicit threshold.
+This gives the precise range in which the proposed formula $k\rad(k)$
+is correct. We also prove the entry's distinct-prime-row assertion and
+first-column formula using the same valuation description. For the
+cross-referenced sequence minimum in A343825, we prove eventual equality
+with A071537 by an explicit determinant bound and reprove Adenwalla's
+$k=12$ prime column: $20$ at $p=2$ and $18$ at every odd prime.
+The valuation classes also answer the image questions in Kagey's
+\emph{Open problem collection}, Problem 16: they characterize the cube-row
+image and show that the two-value rows are injective exactly at prime exponents.
+\end{abstract}
+
+\section{The conjecture and its obstruction}
+For integers $n\ge2$ and $k\ge1$, let $T(n,k)$ be the least integer $m>k$
+such that
+\begin{equation}\label{eq:works}
+ k^x m^y=c^n,\qquad c\ge1,\quad 1\le x,y<n.
+\end{equation}
+This is the definition in the NAME of A343881~\cite{a343881}.
+The minimum always exists: $m=k2^n$, $x=n-1$, $y=1$, and $c=2k$
+satisfy~\eqref{eq:works}. For a prime $q$, write $v_q(a)$ for its
+exponent in the positive integer $a$. Unique prime factorization gives
+the equivalent condition
+\begin{equation}\label{eq:valuation}
+ n\mid x v_q(k)+y v_q(m)\quad\hbox{for every prime }q.
+\end{equation}
+Conversely, these divisibilities give the integer
+$c=\prod_q q^{(xv_q(k)+yv_q(m))/n}$, so no direction of this equivalence
+requires an additional condition.
+
+The conjecture is in the second COMMENT of revision 16 of A343881:
+\begin{quote}
+``Conjecture: T(p,k) = A064549(k) for fixed k $>$ 1 and sufficiently large p.''
+\end{quote}
+It was added in revision 3 on May 2, 2021; revision 16 retains this wording.
+Here $p$ is prime and A064549 is $k\rad(k)$, where
+$\rad(k)=\prod_{q\mid k}q$~\cite{a064549}. The failure at $k=12$
+has a two-coordinate proof.
+
+\begin{proposition}\label{prop:obstruction}
+For every $n\ge2$, no integers in~\eqref{eq:works} exist with
+$k=12$ and $m=72$. In particular, $T(p,12)\ne72=12\rad(12)$ for
+every prime $p$.
+\end{proposition}
+\begin{proof}
+Since $12=2^2 3$ and $72=2^3 3^2$, condition~\eqref{eq:valuation}
+would imply
+\[
+ n\mid 2x+3y,\qquad n\mid x+2y.
+\]
+Subtracting the first expression from twice the second gives $n\mid y$,
+contrary to $1\le y<n$. The minimum exists by the construction above,
+and a least admissible integer is itself admissible.
+\end{proof}
+There are primes above every bound, so Proposition~\ref{prop:obstruction}
+negates the conjecture's eventual quantifier, not just a finite range.
+
+\section{The corrected eventual formula}
+Write $k=\prod_{q\mid k}q^{a_q}>1$ and put
+\[
+ g=\gcd_{q\mid k}a_q,\qquad r=\prod_{q\mid k}q^{a_q/g},\qquad
+ M=r^{g+1},\qquad A=\max_{q\mid k}a_q,\qquad
+ L=\lfloor\log_2 M\rfloor.
+\]
+Thus $k=r^g$ and the exponents of $r$ have greatest common divisor $1$.
+
+\begin{theorem}\label{thm:correction}
+For every prime $p>\max\{g+1,AL\}$,
+\[
+ T(p,k)=M=k r.
+\]
+Consequently, for fixed $k>1$, the conjectured eventual value $k\rad(k)$
+is correct if and only if all the nonzero prime exponents of $k$ are equal.
+\end{theorem}
+\begin{proof}
+The integer $M$ is admissible: take $x=p-(g+1)$, $y=g$, $c=k$.
+The bound $p>g+1$ ensures $1\le x,y<p$, and
+\[
+ k^x M^y=r^{g(p-g-1)+(g+1)g}=r^{gp}=k^p.
+\]
+Suppose $k<m<M$ is admissible. Write $b_q=v_q(m)$, taking $a_q=0$
+outside the primes of $k$. Since $m<M$, every $b_q\le L$.
+For a prime $q\nmid k$, condition~\eqref{eq:valuation} gives $p\mid yb_q$.
+As $1\le y<p$ and $p$ is prime, $p\mid b_q$; but $0\le b_q\le L<p$,
+so $b_q=0$. Thus $m$ has no new prime factor.
+
+For primes $q,s\mid k$, eliminate $x$ between their two congruences.
+This gives
+\[
+ p\mid y(a_q b_s-a_s b_q),\qquad
+ p\mid a_q b_s-a_s b_q.
+\]
+Both products in the difference lie in $[0,AL]$, so its absolute value
+is at most $AL<p$. Therefore $a_q b_s=a_s b_q$ for every pair $q,s$.
+The vectors $(b_q)$ and $(a_q/g)$ are rationally proportional.
+Set $e_q=a_q/g$. B\'ezout's identity supplies integers $u_q$ with
+$\sum_q u_qe_q=1$. If $b_q=t e_q$ with $t\in\mathbb Q$, then
+$t=\sum_q u_qb_q\in\mathbb Z$. Since $m>1$, $t>0$.
+Hence $m=r^t$, and $m>k=r^g$ forces $t\ge g+1$, a contradiction.
+
+Finally, $kr=k\rad(k)$ holds exactly when $r=\rad(k)$.
+By unique factorization this means $a_q/g=1$ for every $q\mid k$,
+which is equivalent to equality of all the $a_q$.
+\end{proof}
+For $2\le k\le11$ all nonzero prime exponents are equal; $12$ is the
+first exception. This explains why the entry's displayed columns $k\le10$
+do not exhibit the obstruction. The general bound gives $p\ge17$
+at $k=12$; the exact threshold is smaller.
+
+\begin{corollary}\label{cor:column}
+For primes $p$,
+\[
+ T(p,12)=
+ \begin{cases}
+ 27,&p=2,\\
+ 18,&p=3,\\
+ 54,&p=5,\\
+ 144,&p\ge7.
+ \end{cases}
+\]
+\end{corollary}
+\begin{proof}
+For $p=2$, necessarily $x=y=1$, and $12m$ is a square exactly when
+$m=3s^2$ for a positive integer $s$. The least such $m>12$ is $27$.
+For $p=3$, $12\cdot18=6^3$; none of $13,14,15,16,17$ works:
+for $13,14,15,17$ a new prime occurs to exponent $1$, contradicting
+$3\mid y$; for $16$ the $3$-valuation forces $3\mid x$.
+
+For $p=5$, $12^2\cdot54=6^5$.
+If $12<m<54$ worked, any new prime would occur to exponent at least $5$,
+giving $m\ge5^5>54$. Both $2$ and $3$ must occur in $m$, since otherwise
+one of $5\mid 2x$ or $5\mid x$ would hold. Thus $m=2^a3^b$, $a,b\ge1$.
+The possibilities strictly between $12$ and $54$ are $18,24,36,48$;
+the values of $2b-a$ are $3,-1,2,-2$, respectively.
+Elimination in~\eqref{eq:valuation} requires $5\mid2b-a$, so none works.
+
+For $p\ge7$, $m=144$ works with $x=p-2$, $y=1$, and $c=12$.
+Suppose $12<m<144$ worked. A new prime factor would imply
+$m\ge5^p>144$. Again both $2$ and $3$ must divide $m$, so
+$m=2^a3^b$ with $a,b\ge1$. The bound on $m$ gives $a\le5$ and $b\le3$:
+$2^6\cdot3>144$ and $2\cdot3^4>144$.
+Thus $-3\le2b-a\le5$, whereas elimination requires $p\mid2b-a$.
+It follows that $a=2b$, so $m=12^b$. No such integer is strictly
+between $12$ and $144$.
+\end{proof}
+
+\section{Other statements in the posing entry}
+The first COMMENT says, for prime $p$, that the
+``row consists of distinct integers.''
+Its $p=2$ case has Kagey's explicit 2015 proof in A072905~\cite{a072905};
+A277781 records the $p=3$ assertion~\cite{a277781}.
+The following argument treats every prime in the same way.
+
+\begin{proposition}\label{prop:distinct}
+For each prime $p$, the map $k\mapsto T(p,k)$ on positive integers
+is injective.
+\end{proposition}
+\begin{proof}
+Associate to $k$ its finitely supported valuation vector
+$(v_q(k)\bmod p)_q$ over $\mathbb F_p$.
+Two positive integers are equivalent when their vectors are both zero,
+or are nonzero scalar multiples of each other.
+This is an equivalence relation. By~\eqref{eq:valuation}, admissibility
+for a prime exponent is exactly this relation: $x,y$ are nonzero modulo $p$,
+and conversely a nonzero scalar ratio supplies such $x,y$.
+The zero-vector case also works, with $x=y=1$.
+Hence $T(p,k)$ is the next larger member of $k$'s equivalence class.
+If $k_1<k_2$ had the same successor $m$, then $k_1,k_2,m$ would lie
+in the same class, with $k_1<k_2<m$. This contradicts the minimality
+of the successor of $k_1$.
+\end{proof}
+
+The same description gives an exact formula for any fixed prime.
+For $1\le a<p$ put
+\[
+ C_a(k)=\prod_{q\mid k}q^{[a v_q(k)]_p},
+ \qquad [b]_p\in\{0,\ldots,p-1\},\quad [b]_p\equiv b\pmod p.
+\]
+\begin{corollary}\label{cor:primeformula}
+For every prime $p$ and positive integer $k$,
+\[
+ T(p,k)=\min_{1\le a<p} C_a(k)
+ \left(\left\lfloor\sqrt[p]{k/C_a(k)}\right\rfloor+1\right)^p.
+\]
+\end{corollary}
+\begin{proof}
+An admissible valuation vector is $a(v_q(k))_q$ modulo $p$ for
+some $a\ne0$. The positive integers with this residue vector are exactly
+$C_a(k)t^p$, $t\ge1$: outside the support of $k$, all valuations are
+multiples of $p$. The displayed expression is the least such integer
+strictly exceeding $k$, minimized over the allowed residues.
+\end{proof}
+At $p=2$ this is Kagey's February 6, 2015 formula in A072905:
+if $k=d t^2$ with $d$ squarefree, then $T(2,k)=d(t+1)^2$.
+At $p=3$ it gives the minimum of the two cube-residue formulas in
+A277781, FORMULA, namely A254767 and A277780. The latter's formula
+$d(t+1)^3$ for $k=dt^3$, $d$ cubefree, is attributed there to
+Hoft (November 2, 2016), with Corneth's proof dated November 3, 2016
+\cite{a277780}.
+
+\begin{corollary}\label{cor:squarerange}
+The map $k\mapsto T(2,k)$ is a bijection from positive integers to
+the integers that are not squarefree.
+\end{corollary}
+\begin{proof}
+In each squarefree class, the formula sends $dt^2$ to $d(t+1)^2$.
+Its range therefore consists exactly of $dt^2$ with $t\ge2$, each with
+unique inverse $d(t-1)^2$. This reproves Kagey's June 22, 2015 result.
+\end{proof}
+
+The FORMULA of A343881 states \texttt{T(n,1) = 2\^{}A020639(n)};
+A020639 supplies
+the least-prime-factor notation~\cite{a020639}.
+\begin{proposition}\label{prop:firstcolumn}
+If $\ell$ is the least prime divisor of $n\ge2$, then $T(n,1)=2^\ell$.
+\end{proposition}
+\begin{proof}
+If $m^y=c^n$ with $1\le y<n$, put $d=n/\gcd(n,y)>1$.
+Then $d\mid v_q(m)$ for every prime $q$, so $m$ is a $d$th power
+of an integer at least $2$. Since $d>1$ divides $n$, it satisfies
+$d\ge\ell$, and $m\ge2^d\ge2^\ell$.
+Equality is attained with $m=2^\ell$, $x=1$, $y=n/\ell$, and $c=2$.
+\end{proof}
+
+\begin{corollary}\label{cor:composite}
+The row $k\mapsto T(n,k)$ is injective if and only if $n$ is prime.
+For composite $n$, if $\ell$ is its least prime divisor, then
+\[
+ T(n,1)=T(n,2^{\ell-1})=2^\ell.
+\]
+\end{corollary}
+\begin{proof}
+The prime case is Proposition~\ref{prop:distinct}, and the first value
+is Proposition~\ref{prop:firstcolumn}. Write $n=\ell h$, where $h\ge\ell$.
+For $k=2^{\ell-1}$ and $m=2^\ell$, choose
+$x=\ell$, $y=h-\ell+1$, and $c=2$. Both exponents lie in $[1,n-1]$,
+and $(\ell-1)x+\ell y=n$.
+If $k<m'<2^\ell$ were admissible, any prime $q\ne2$ dividing $m'$
+would have $n/\gcd(n,y')>1$ dividing $v_q(m')$, where $y'$ is its
+witness exponent. This divisor is at least $\ell$, forcing
+$m'\ge3^\ell>2^\ell$. Thus $m'$ would be a power of $2$, but there is
+no such power strictly between $2^{\ell-1}$ and $2^\ell$.
+The two displayed starting arguments are distinct.
+\end{proof}
+
+\subsection*{The image questions in Problem 16}
+Problem 16 of Kagey's \emph{Open problem collection} (August 4, 2025,
+printed p.~16) asks how to ``characterize what integers are in A299117,''
+the image of the cube row, and asks about squares, squarefree integers,
+and general exponents~\cite{problems}. Its earlier January 16, 2020
+version has the same question~\cite{problems2020}.
+
+\begin{corollary}\label{cor:image}
+For a prime $p$, let $J_p(m)=\min_{1\le a<p}C_a(m)$, with $C_a$
+as in Corollary~\ref{cor:primeformula}. Then
+\[
+ m\in\operatorname{image}(T(p,\cdot))\quad\Longleftrightarrow\quad
+ m>J_p(m).
+\]
+Every member of this image is nonsquarefree.
+\end{corollary}
+\begin{proof}
+The positive members of the valuation class of $m$ are exactly the
+integers $C_a(m)t^p$ with $1\le a<p$, $t\ge1$.
+Their least member is $J_p(m)$. A member has a predecessor precisely
+when it exceeds this least member; the greatest smaller class member
+then maps to it under $T(p,\cdot)$.
+If $m$ is squarefree, $C_a(m)=m^a$ for $1\le a<p$, so $J_p(m)=m$.
+\end{proof}
+
+\begin{corollary}\label{cor:cubeimage}
+Write $m=A B^2t^3$, where $A,B$ are coprime squarefree positive integers
+and $t\ge1$. Then
+\[
+ m\in\operatorname{A299117}
+ \quad\Longleftrightarrow\quad t>1\ \hbox{or}\ A<B.
+\]
+In particular the cube-row image contains every square and every cube
+greater than $1$, contains no squarefree integer, and excludes $1$.
+For every prime $q$,
+\[
+ T(3,q)=\min\{q^2,8q\}.
+\]
+\end{corollary}
+\begin{proof}
+The two representatives are $C_1(m)=AB^2$ and $C_2(m)=A^2B$.
+If $t>1$, then $C_1(m)<m$. If $t=1$, the image criterion reduces to
+$A^2B<AB^2$, or $A<B$. A square with $t=1$ has $A=1$ and $B>1$
+unless it is $1$; a cube greater than $1$ has $t>1$.
+The squarefree exclusion follows from Corollary~\ref{cor:image}.
+Finally the two classes for $k=q$ give the candidates $8q$ and $q^2$
+in Corollary~\ref{cor:primeformula}.
+\end{proof}
+This answers Problem 16's image-characterization and squarefree questions.
+The answer to its square question is yes for squares greater than $1$,
+and no if $1$ is included. The same endpoint convention applies to its
+cube note, whose formula $T(3,t^3)=(t+1)^3$ starts at $t\ge1$.
+The 2020 version additionally states $a(p)=p^2$ for prime $p$ in its
+note before Related question 1. The corrected value above gives
+$a_3(11)=88<121$, while its conclusion that all prime squares are in
+the image remains true. A299117's nonsquarefree assertion~\cite{a299117}
+is proved by Corollary~\ref{cor:image}.
+For Problem 16's generalization, the image criterion covers prime
+exponents; the composite-exponent image characterization is not covered.
+
+\section{The cross-referenced sequence minimum}
+Write $S(n,k)$ for the minimum in A343825~\cite{a343825}: the least
+endpoint of a nondecreasing sequence starting at $k$, with every multiplicity
+less than $n$ and product an $n$th power. This is the function $g_n(k)$
+in Adenwalla's Definition 2.2~\cite{adenwalla}. For $n\ge2$,
+$S(n,0)=0$ and $S(n,1)=1$, using singleton sequences.
+COMMENT 2 asserts \texttt{T(n,k) <= A343881(n,k)} in that entry's notation.
+
+\begin{corollary}\label{cor:comparison}
+For $n\ge2$ and $k\ge1$, $S(n,k)\le T(n,k)$.
+For $n=2$ this inequality is strict for every $k\ge1$.
+\end{corollary}
+\begin{proof}
+Use $x$ copies of $k$ and $y$ copies of an admissible $m>k$.
+For strictness, if $k$ is square then $S(2,k)=k<T(2,k)$.
+Otherwise write $k=dt^2$ with $d>1$ squarefree and $t\ge1$.
+Put $s=dt+1$. The four distinct integers
+\[
+ dt^2<ts<dt(t+1)<(t+1)s
+\]
+have product $(dt^2(t+1)s)^2$, and
+$(t+1)s<d(t+1)^2=T(2,k)$ since
+$d(t+1)^2-(t+1)s=(d-1)(t+1)>0$.
+This is the construction in Kagey and Rajesh's Theorem 32 (2024),
+credited there to Rajesh's 2024 thesis~\cite{kageyrajesh}.
+\end{proof}
+
+Let $v(j)=(v_q(j))_q$. For a field $F$, define
+\[
+ E_F(k)=\min\{m\ge k: v(k)\in
+ \operatorname{span}_F(v(k+1),\ldots,v(m))\}.
+\]
+Over $\mathbb F_p$, valuation vectors are reduced modulo $p$.
+The empty span is $\{0\}$. For $k\ge1$,
+\begin{equation}\label{eq:span}
+ S(p,k)=E_{\mathbb F_p}(k),\qquad
+ R(k):=\operatorname{A071537}(k)=E_{\mathbb Q}(k).
+\end{equation}
+Indeed, divide a nonzero coefficient of $v(k)$ out of a linear relation;
+conversely, choose integer residues $0,\ldots,p-1$ of its coefficients
+to obtain the required multiplicities. Over $\mathbb Q$, clear
+denominators and use unique factorization to identify a valuation relation
+with the signed-power product $1$ in A071537~\cite{a071537}.
+These minima exist: for $k>1$, $v(k^2)=2v(k)$ proves existence over
+$\mathbb Q$ and over every odd characteristic; characteristic $2$ follows
+from $S(2,k)\le T(2,k)$. Also $E_F(1)=1$.
+
+\begin{proposition}\label{prop:permutation}
+For every prime $p$, $k\mapsto S(p,k)$ permutes the nonnegative
+nonprime integers as $k$ ranges over the nonnegative integers.
+Also $R$ is a bijection from the positive integers to the positive nonprimes.
+\end{proposition}
+\begin{proof}
+The following elimination works over either field in~\eqref{eq:span}.
+If $k<l$ had the same minimal endpoint $m$, both relations would have
+nonzero coefficients at $m$ unless an endpoint equalled its start.
+Eliminating $v(m)$ would express $v(k)$ using $v(k+1),\ldots,v(m-1)$,
+a contradiction. If $l=m$ then $v(m)=0$, which can simply be omitted
+from the relation for $k$, giving the same contradiction.
+Thus the map is injective.
+
+A prime endpoint $m$ is impossible: its own prime coordinate is zero
+in every earlier vector, but is $1$ in $v(m)$.
+For a composite $m$, $v(m)$ is in the span of the earlier prime vectors.
+If $v(m)=0$, then $E_F(m)=m$. Otherwise choose the largest $k<m$ for
+which $v(m)$ lies in the span of $v(k),\ldots,v(m-1)$.
+The coefficient of $v(k)$ is nonzero, so $E_F(k)\le m$.
+If $E_F(k)<m$, substituting its relation would remove $v(k)$, contrary
+to maximality of $k$. Hence $E_F(k)=m$.
+Finally $1$ maps to $1$, and the $S$ row also has $0$ mapping to $0$.
+\end{proof}
+For $S$, this reproves Adenwalla's Theorems 5.1 and 5.5 (2025).
+The source assertion is A343825, COMMENT 1, ``a permutation of the
+nonprime integers,'' for each prime row.
+Its $p=2$ case is Reid's 1987 result, whose proof is reproduced by
+Kagey and Rajesh (2024), Section 1~\cite{kageyrajesh}.
+For $R$, it reproves Alekseyev's October 22, 2008 proof in A071537.
+
+\begin{theorem}\label{thm:sequenceeventual}
+Fix $k>1$, set $R=R(k)$, $d=\pi(R)$, $B=\lfloor\log_2 R\rfloor$,
+and $H=d!B^d$. Then $S(p,k)=R$ for every prime $p>H$.
+For $k=1$, equality holds for every prime.
+\end{theorem}
+\begin{proof}
+For each $k\le m\le R$, form the integer valuation matrices with
+columns $v(k),\ldots,v(m)$ and $v(k+1),\ldots,v(m)$, using the $d$
+prime coordinates at most $R$. Each entry is at most $B$.
+By the determinant expansion, every $s$-rowed minor has absolute value
+at most $s!B^s\le H$. Consequently every nonzero minor remains nonzero
+modulo $p>H$, and every zero minor remains zero. Both ranks are therefore
+unchanged on reduction. Equality of these two ranks is equivalent to the
+span condition in~\eqref{eq:span}. The first endpoint satisfying it is
+thus the same over $\mathbb Q$ and $\mathbb F_p$, namely $R$.
+\end{proof}
+This proves COMMENT 3 of A343825, posed in revision 11 on May 2, 2021
+and retained in revision 22 (June 14, 2021):
+\begin{quote}
+``Conjecture: T(p,k) = A071537(k) for fixed k and sufficiently large prime p.''
+\end{quote}
+Here $k\ge1$ is the domain of A071537. This is a different eventual
+formula from COMMENT 2 of A343881: two allowed values and arbitrarily
+many allowed values give different minima.
+
+\begin{corollary}\label{cor:sequencecolumn}
+For every prime $p$,
+\[
+ S(p,12)=\begin{cases}20,&p=2,\\18,&p\text{ odd}.\end{cases}
+ \qquad R(12)=18.
+\]
+In particular $S(p,12)=T(p,12)$ exactly when $p=3$.
+\end{corollary}
+\begin{proof}
+Before endpoint $18$, the coordinates at $13,7,5,17$ force coefficients
+of $13,14,15,17$ to vanish. The only remaining later vector is
+$v(16)$, whose $3$-coordinate is zero, so it cannot span $v(12)$.
+The rational relation
+\[
+ 8v(12)-3v(16)-4v(18)=0
+\]
+supplies endpoint $18$ over $\mathbb Q$ and over every odd characteristic,
+since the coefficients $8$ and $4$ are then nonzero.
+In characteristic $2$, the $3$-coordinate remains unavailable through
+endpoint $19$: $v(16)=0$, $v(18)=v(2)$, and the prime $19$ cannot
+participate. At endpoint $20$, $12\cdot15\cdot20=60^2$ supplies equality.
+Compare with Corollary~\ref{cor:column} for the last assertion.
+\end{proof}
+
+This recovers Adenwalla's Appendix, item 8 (2025), for prime exponents.
+
+\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.43\linewidth}>{\raggedright\arraybackslash}p{0.49\linewidth}@{}}
+\toprule
+Source item & Coverage \\
+\midrule
+\endfirsthead
+\toprule
+Source item & Coverage (continued) \\
+\midrule
+\endhead
+A343881, COMMENT 2 & Refuted and corrected: Proposition~\ref{prop:obstruction},
+Theorem~\ref{thm:correction}. \\
+A343881, COMMENT 1 & Proved: Proposition~\ref{prop:distinct}; includes
+the A277781 distinctness assertion. \\
+A343881, FORMULA & Proved: Proposition~\ref{prop:firstcolumn}. \\
+A343881, example table & Finite check: rows $2\le n\le11$, $1\le k\le10$. \\
+A072905, bijection COMMENT & Reproved; prior proof Kagey (2015):
+Corollary~\ref{cor:squarerange}. \\
+A072905, FORMULA; A277781, FORMULA & Reproved; prior formulas
+Kagey (2015) and the cited entries: Corollary~\ref{cor:primeformula}. \\
+A277780, formula COMMENT & Reproved; prior formula Hoft and proof
+Corneth (2016): Corollary~\ref{cor:primeformula}, $p=3$ case. \\
+A299117, nonsquarefree COMMENT & Proved:
+Corollary~\ref{cor:image}. \\
+Problem 16, main question & Answered: explicit cube-row image,
+Corollary~\ref{cor:cubeimage}. \\
+Problem 16, Related 1--2 & Answered: all squares $>1$, but not $1$;
+no squarefree number. \\
+Problem 16 (2020), note $a(p)=p^2$ & Refuted and corrected:
+$a_3(q)=\min\{q^2,8q\}$, including $a_3(11)=88$. \\
+Problem 16, general-exponent question & Prime images characterized;
+composite images not covered. Injectivity iff prime is not posed;
+proved in Corollary~\ref{cor:composite}. \\
+A343825, COMMENT 1 & Reproved; prior proof Adenwalla (2025),
+Theorems 5.1, 5.5: Proposition~\ref{prop:permutation}. \\
+A343825, COMMENT 2 & Proved: Corollary~\ref{cor:comparison}.
+Strict $n=2$ case reproves Rajesh and Kagey--Rajesh (2024). \\
+A343825, COMMENT 3 & Proved with explicit bound:
+Theorem~\ref{thm:sequenceeventual}. \\
+Adenwalla, Appendix, item 8 & Reproved; prior proof Adenwalla (2025):
+exact $k=12$ prime column in Corollary~\ref{cor:sequencecolumn}. \\
+A071537, permutation COMMENT & Reproved; prior proof Alekseyev (2008):
+Proposition~\ref{prop:permutation}. \\
+A006255, other bounds and conjectures; A328045, composite row;
+Adenwalla, Conjectures 5.6 and 6.10 & Not covered. \\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\section{Verification coverage}
+The declaration \texttt{result} in the pinned
+\href{https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean}{\texttt{OeisA343881KageyPowerProducts.lean}} source~\cite{lean}
+proves the negation of A343881's eventual-equality conjecture.
+Its definitions \texttt{Works}, \texttt{A064549}, and \texttt{claim}
+match~\eqref{eq:works}, $k\rad(k)$, and the prime-threshold quantifiers,
+respectively. The sibling declaration \texttt{result} in
+\href{https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343825KageyPowerSequences.lean}{\texttt{OeisA343825KageyPowerSequences.lean}}~\cite{leansibling}
+proves A343825's eventual equality with A071537 for every $k\ge1$.
+Its \texttt{Valid}, \texttt{T}, \texttt{Relation}, and \texttt{A071537}
+definitions give the sequence, endpoint minimum, signed multiplicative
+relation, and relation minimum used above. Its conclusion is the eventual
+equality, rather than the explicit determinant bound in
+Theorem~\ref{thm:sequenceeventual}.
+The corrected two-value formula, exact columns, row assertions, explicit
+bounds, and first-column identity have the written proofs in this note.
+
+The accompanying \texttt{verify.py} uses exact integer factorization and
+divisibility. It checks the 100 displayed table entries, the $k=12$ column
+at all primes below $48$, the obstruction for $2\le n\le60$, and the
+corrected formula at $2\le k\le100$ for $p=31,37,41,43$.
+An integer-root calculation independently checks admissibility at $k=12$,
+$2\le n\le7$, $13\le m\le144$.
+Further checks compare the fixed-prime formula with direct minimum searches,
+the sequence minimum with exhaustive small multiplicity lists and the
+source's displayed prime rows, all prime exponents below $100$ at $k=12$,
+and the rational relation minimum with its $81$ published terms.
+Rank computations also test the eventual sequence equality for
+$2\le k\le30$ and $p=101,103,107,109$; these are finite instances,
+not applications of the generally much larger bound $H$.
+The image criterion is compared with all row predecessors through $m=500$
+at $p=2,3,5,7$; its cube specialization is compared with the first $1000$
+terms of A299117. Composite-row collisions are checked for every
+composite $n\le50$.
+Exact ranges and counts are in \texttt{scientific-checks.json}.
+These finite checks are distinct from the all-input written proofs.
+
+\begin{thebibliography}{99}\small\raggedright
+\bibitem{a343881} P. Kagey, \emph{OEIS A343881}, created May 2, 2021,
+revision 16, June 14, 2021; NAME, COMMENTS 1--2, FORMULA, and EXAMPLE.
+\url{https://oeis.org/A343881}.
+\bibitem{a064549} H. Bottomley, \emph{OEIS A064549}, created October 16, 2001,
+revision 71, September 7, 2026; NAME and the example $a(12)=72$.
+\url{https://oeis.org/A064549}.
+\bibitem{a072905} B. Cloitre, \emph{OEIS A072905}, created August 10, 2002;
+P. Kagey's COMMENT of June 22, 2015, proving bijectivity.
+\url{https://oeis.org/A072905}.
+\bibitem{a277781} P. Kagey, \emph{OEIS A277781}, created October 30, 2016;
+NAME and the one-to-one COMMENT. \url{https://oeis.org/A277781}.
+\bibitem{a020639} D. W. Wilson, \emph{OEIS A020639}, NAME (least prime divisor).
+\url{https://oeis.org/A020639}.
+\bibitem{a343825} P. Kagey, \emph{OEIS A343825}, created April 30, 2021,
+revision 22, June 14, 2021; NAME and COMMENTS.
+\url{https://oeis.org/A343825}.
+\bibitem{a071537} A. Fink, \emph{OEIS A071537}, created May 30, 2002;
+M. Alekseyev's proof and program, October 22, 2008; NAME and COMMENTS.
+\url{https://oeis.org/A071537}.
+\bibitem{a277780} P. Kagey, \emph{OEIS A277780}, created October 30, 2016;
+H. F. W. Hoft's formula, November 2, 2016, and D. A. Corneth's proof,
+November 3, 2016. \url{https://oeis.org/A277780}.
+\bibitem{a299117} P. Kagey, \emph{OEIS A299117}, created February 2, 2018;
+NAME and nonsquarefree COMMENT. \url{https://oeis.org/A299117}.
+\bibitem{problems} P. Kagey, \emph{Open problem collection},
+August 4, 2025, Problem 16, printed p.~16 (PDF p.~18).
+\href{https://github.com/peterkagey/OpenishProblems/blob/4fcae7f356de0ee7f65db45ac07b97d4e1448a64/v2/mainfile.pdf}{Pinned collection PDF}.
+\bibitem{problems2020} P. Kagey, \emph{Open problem collection},
+January 16, 2020, Problem 16, printed p.~16 (PDF p.~17).
+\url{https://www.gathering4gardner.org/g4g14gift/G4G14-PeterKagey-OpenishProblems.pdf}.
+\bibitem{kageyrajesh} P. Kagey and K. Rajesh, \emph{On a Conjecture about
+Ron Graham's Sequence}, arXiv:2410.04728v2 (October 11, 2024),
+Sections 1--2 and Theorem 32.
+\url{https://arxiv.org/abs/2410.04728v2}.
+\bibitem{adenwalla} S. Adenwalla, \emph{On a Generalisation of a Function
+of Ron Graham's}, arXiv:2504.19196v2 (May 8, 2025), Definition 2.2,
+Theorems 5.1 and 5.5, and Appendix, item 8. First version April 27, 2025.
+\url{https://arxiv.org/abs/2504.19196v2}.
+\bibitem{lean}
+\href{https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean}{\emph{OeisA343881KageyPowerProducts.lean}}, declaration
+\texttt{result}, pinned revision \texttt{6974dba}.
+\bibitem{leansibling}
+\href{https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343825KageyPowerSequences.lean}{\emph{OeisA343825KageyPowerSequences.lean}},
+declaration \texttt{result}, pinned revision \texttt{6974dba}.
+\end{thebibliography}
+\noindent\small
+License: \href{https://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution 4.0 International (CC BY 4.0)}.
+\end{document}

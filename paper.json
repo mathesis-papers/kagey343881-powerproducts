@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 103517,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "12371cdf6ef520c9cd498f3da336498f66bc6b4a88e0c18484c9d91f1a15d22c",
+      "sha256": "12371cdf6ef520c9cd498f3da336498f66bc6b4a88e0c18484c9d91f1a15d22c"
+    },
+    "source": {
+      "bytes": 20381,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "d063fd9993be0b6be5c65b41599313e131f73279a931947483fd71202440544d",
+      "sha256": "d063fd9993be0b6be5c65b41599313e131f73279a931947483fd71202440544d"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "We correct the conjecture in comment 2 of Peter Kagey's OEIS A343881, revision 16 (June 14, 2021), and extend results of Kagey (2015) and Adenwalla (2025): the proposed value 72 at k=12 is inadmissible for every exponent n>=2. The exact prime-exponent minima are 27, 18, and 54 at p=2,3,5, respectively, and 144 at every prime p>=7. More generally, writing k=r^g with the prime-exponent vector of r having greatest common divisor 1, we prove that T(p,k)=r^(g+1) for all sufficiently large primes, with an explicit threshold. This gives the precise range in which the proposed formula k rad(k) is correct. We also prove the entry's distinct-prime-row assertion and first-column formula using the same valuation description. For the cross-referenced sequence minimum in A343825, we prove eventual equality with A071537 by an explicit determinant bound and reprove Adenwalla's k=12 prime column: 20 at p=2 and 18 at every odd prime. The valuation classes also answer the image questions in Kagey's Open problem collection, Problem 16: they characterize the cube-row image and show that the two-value rows are injective exactly at prime exponents.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 103517,
+      "sha256": "12371cdf6ef520c9cd498f3da336498f66bc6b4a88e0c18484c9d91f1a15d22c",
+      "url": "/api/v1/collected-papers/kagey343881-powerproducts/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-23T01:22:34.780624452Z",
+    "record": "kagey343881-powerproducts",
+    "repository_name": "kagey343881-powerproducts",
+    "source": {
+      "bytes": 20381,
+      "sha256": "d063fd9993be0b6be5c65b41599313e131f73279a931947483fd71202440544d",
+      "url": "/api/v1/collected-papers/kagey343881-powerproducts/files/source?version=2"
+    },
+    "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-23T01:22:34.780624452Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "kagey343881-powerproducts"
+  }
+}
