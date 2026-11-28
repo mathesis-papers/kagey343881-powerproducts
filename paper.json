@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24409057",
     "current_version": 2,
     "doi": "10.5281/zenodo.24409058",
+    "kind": "note",
     "lean_source": {
       "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
       "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Arith/Factorization/OeisA343881KageyPowerProducts.lean"
@@ -55,10 +56,12 @@
     "title": "Correction of OEIS A343881, comment 2, revision 16: extensions of Kagey (2015) and Adenwalla (2025)",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-23T01:22:34.780624452Z",
         "revision": "2",
-        "version": 2
+        "version": 2,
+        "version_label": null
       }
     ],
     "work": "kagey343881-powerproducts"
